@@ -19,11 +19,11 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun jumpDataBing() {
-        var i=Utils.getNavigationBarHeight(this)
-        Log.i("getNavigationBarHeight","i"+i)
-//        startActivity(Intent(this, DataBindActivity::class.java));
+        startActivity(Intent(this, DataBindActivity::class.java));
     }
-
+    fun jumpDataBing1() {
+        startActivity(Intent(this, DataBind1Activity::class.java));
+    }
     fun jumpRecycleDataBinging() {
         startActivity(Intent(this, RecycleViewActivity::class.java));
     }

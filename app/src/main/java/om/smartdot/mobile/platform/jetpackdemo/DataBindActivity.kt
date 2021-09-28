@@ -32,7 +32,7 @@ class DataBindActivity : AppCompatActivity() {
     }
 
     var n: Int = 0
-    fun showToast() {
+    fun update() {
         n++
         var user1 = Users()
         user1.name = "lisi" + n
@@ -40,8 +40,5 @@ class DataBindActivity : AppCompatActivity() {
         activityDataBinding.user = user1;
     }
 
-    fun jump() {
-        startActivity(Intent(this, RecycleViewActivity::class.java));
-    }
 
 }
